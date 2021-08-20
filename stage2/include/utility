@@ -36,6 +36,12 @@ T exchange(T &ref, U &&v) {
 	return temp;
 }
 
+template<typename T, typename F>
+struct pair {
+	T first;
+	F second;
+};
+
 template<typename I, I... Seq>
 class integer_sequence { };
 
